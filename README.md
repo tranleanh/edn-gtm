@@ -65,19 +65,19 @@ $ python dehaze.py
 
 #### 1. I-HAZE Dataset
 
-<img src="docs/i-haze.jpg" width="800">
+<img src="docs/dehazed-ihaze.jpg" width="800">
 
 #### 2. O-HAZE Dataset
 
-<img src="docs/o-haze.jpg" width="800">
+<img src="docs/dehazed-ohaze.jpg" width="800">
 
 #### 3. Dense-HAZE Dataset
 
-<img src="docs/dense-haze.jpg" width="800">
+<img src="docs/dehazed-densehaze.jpg" width="800">
 
 #### 4. NH-HAZE Dataset
 
-<img src="docs/nh-haze.jpg" width="800">
+<img src="docs/dehazed-nhhaze.jpg" width="800">
 
 
 Have fun!
