@@ -59,17 +59,17 @@ $ python train.py
 #### 1. Quantitative Results
 #### (a) I-HAZE Dataset
 
-| Metric    |  DCP (TPAMI’10)  | CAP (TIP’15) | MSCNN (ECCV’16) | NLID (CVPR’1) | AOD-Net (ICCV’17) | PPD-Net (CVPRW’18)  | EDN-GTM (our)      | 
-| :---:     |   :---:          |   :---:      |    :----:       |    :---:      |          :---:    |    :----:           |    :---:           |
-|  PSNR     |   14.43          |    12.24     |    15.22        |    14.12      |         13.98     |   22.53 (2nd)       |   22.90 (1st)      |
-|  SSIM     |   0.7516         |    0.6065    |    0.7545       |    0.6537     |         0.7323    |   0.8705 (1s)       |  0.8270 (2nd)      |
+| Metric    |  DCP (TPAMI’10)  | CAP (TIP’15) | MSCNN (ECCV’16) | NLID (CVPR’1) | AOD-Net (ICCV’17) | PPD-Net (CVPRW’18) | EDN-GTM (our)      | 
+| :---:     |   :---:          |   :---:      |    :----:       |    :---:      |          :---:    |    :----:          |    :---:           |
+|  PSNR     |   14.43          |    12.24     |    15.22        |    14.12      |         13.98     |   22.53 (2nd)      |   22.90 (1st)      |
+|  SSIM     |   0.7516         |    0.6065    |    0.7545       |    0.6537     |         0.7323    |   0.8705 (1s)      |  0.8270 (2nd)      |
 
 #### (b) O-HAZE Dataset
 
-| Metric    |  DCP (TPAMI’10)  | CAP (TIP’15) | MSCNN (ECCV’16) | NLID (CVPR’1) | AOD-Net (ICCV’17) | PPD-Net (CVPRW’18)    |  EDN-GTM (our)      | 
-| :---:     |   :---:          |   :---:      |    :----:       |    :---:      |          :---:    |    :----:             |     :---:           |
-|  PSNR     |   16.78          |    16.08     |    17.56        |    15.98      |         15.03     |    24.24 (best)       |     23.46 (2nd)     |
-|  SSIM     |   0.6532         |    0.5965    |    0.6495       |    0.5849     |         0.5385    |   0.7205 (2nd)        |      0.8198 (1st)   |
+| Metric    |  DCP (TPAMI’10)  | CAP (TIP’15) | MSCNN (ECCV’16) | NLID (CVPR’1) | AOD-Net (ICCV’17) | PPD-Net (CVPRW’18) |  EDN-GTM (our)      | 
+| :---:     |   :---:          |   :---:      |    :----:       |    :---:      |          :---:    |    :----:          |     :---:           |
+|  PSNR     |   16.78          |    16.08     |    17.56        |    15.98      |         15.03     |    24.24 (best)    |     23.46 (2nd)     |
+|  SSIM     |   0.6532         |    0.5965    |    0.6495       |    0.5849     |         0.5385    |   0.7205 (2nd)     |      0.8198 (1st)   |
 
 #### (c) Dense-HAZE Dataset
 
