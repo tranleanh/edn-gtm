@@ -2,7 +2,7 @@
 
 Official Implementation of "EDN-GTM: A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing"
 
-Paper: (to be updated)
+Paper: [arXiv](https://arxiv.org/abs/2202.04757)
 
 Medium article: (will be updated)
 
