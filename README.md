@@ -21,17 +21,18 @@ $ pip install -r requirements.txt
 
 ## II. Test using Pre-trained Weights
 
-#### 1. Download pre-trained weights
-- Download weight files from this link
+#### 1. Download Pre-trained Weights
+- Download pre-trained weights from [GoogleDrive](https://drive.google.com/drive/folders/1SjakD7bzNbZm5K8KxBYgXE5DgdEjFiQt)
+- There are 4 weight files available for test on I-HAZE, O-HAZE, Dense-HAZE, NH-HAZE datasets (respective to their filenames)
+- Make a folder 'weights' to locate downloaded weight files
 
-- Locate weight files in folder: weights/
+#### 2. Correct Data Paths in [test_on_images.py](https://github.com/tranleanh/edn-gtm/blob/main/test_on_images.py)
+- Path to pre-trained weight: [weight_path](https://github.com/tranleanh/edn-gtm/blob/6c3d5ebb058cfde72aea57c0d90c6e8b40216ca1/test_on_images.py#L58) 
+- Path to output directory: [output_dir](https://github.com/tranleanh/edn-gtm/blob/6c3d5ebb058cfde72aea57c0d90c6e8b40216ca1/test_on_images.py#L63)
+- Path to folder containing test images: [img_src](https://github.com/tranleanh/edn-gtm/blob/6c3d5ebb058cfde72aea57c0d90c6e8b40216ca1/test_on_images.py#L69)
 
-#### 2. Edit Image Folder in Script
-- Image Folder
+#### 3. Run Test Script
 
-#### 3. Run Dehazing
-
-- Run: to be updated
 ```bashrc
 $ python test_on_images.py
 ```
@@ -40,15 +41,19 @@ $ python test_on_images.py
 
 #### 1. Prepare Dataset
 - Each image in a clean-hazy image pair must have the same name
-
 - Make Folder 'A' and Folder 'B' containing hazy and clean images, respectively
 
-#### 2. Edit Image Folder Path in Training Script
-- Image Folder
+#### 2. Correct Data Paths in [train.py](https://github.com/tranleanh/edn-gtm/blob/main/train.py)
+- Path to folder containing train data: [path/to/data](https://github.com/tranleanh/edn-gtm/blob/6c3d5ebb058cfde72aea57c0d90c6e8b40216ca1/train.py#L39)
+- Note that [path/to/data](https://github.com/tranleanh/edn-gtm/blob/6c3d5ebb058cfde72aea57c0d90c6e8b40216ca1/train.py#L39) nevigates to the parent directory of 'A' and 'B' like below:
 
-#### 3. Run Training
+```bashrc
+-- path/to/data -
+                |- A
+                |- B
+```
 
-- Run: to be updated
+#### 3. Run Train Script
 ```bashrc
 $ python train.py
 ```
