@@ -48,9 +48,9 @@ $ python test_on_images.py
 - Note that [path/to/data](https://github.com/tranleanh/edn-gtm/blob/6c3d5ebb058cfde72aea57c0d90c6e8b40216ca1/train.py#L39) nevigates to the parent directory of 'A' and 'B' like below:
 
 ```bashrc
--- path/to/data -
-                |- A
-                |- B
+-- path/to/data /
+                |- A (containing hazy images)
+                |- B (containing clean images)
 ```
 
 #### 3. Run Train Script
