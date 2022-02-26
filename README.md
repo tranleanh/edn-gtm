@@ -108,6 +108,16 @@ $ python train.py
 
 <img src="docs/dehazed-nhhaze.jpg" width="800">
 
+## Citation
+```
+@article{tran2022novel,
+  title={A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing},
+  author={Tran, Le-Anh and Moon, Seokyong and Park, Dong-Chul},
+  journal={arXiv preprint arXiv:2202.04757},
+  year={2022}
+}
+```
+
 
 Have fun!
 
