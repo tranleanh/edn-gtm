@@ -1,10 +1,12 @@
 # EDN-GTM: A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing
 
-Official Implementation of "EDN-GTM: A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing"
+Official Implementation of "EDN-GTM: A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing"    
+
+Authors: [Le-Anh Tran](https://scholar.google.com/citations?user=WzcUE5YAAAAJ&hl=en), Seokyong Moon, Dong-Chul Park
 
 Paper: [arXiv](https://arxiv.org/abs/2202.04757)
 
-Medium article: (will be updated)
+Blog: [Medium](https://tranlevision.medium.com/edn-gtm-encoder-decoder-network-with-guided-transmission-map-for-single-image-dehazing-78e8036bbaa3)
 
 ## I. Requiremtents
 - CUDA 10.0
