@@ -122,7 +122,16 @@ $ python train.py
 
 <img src="docs/dehazed-nhhaze.jpg" width="800">
 
+
 #### 3. Application to Object Detection
+
+#### (a) Dehazing in Driving Scenes
+Visual results on synthesized hazy driving scenes (left: synthesized hazy image, right: dehazed image).
+
+<img src="docs/waymo_dehazed.png" width="800">
+
+#### (b) Object Detection Performances
+Object detection performances on two sets of hazy (left) and dehazed (right) images (red: ground-truth box, green: predicted box, blue: zoom-in region).
 
 <img src="docs/applied-to-object-detection.png" width="800">
 
