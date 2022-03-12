@@ -1,12 +1,16 @@
 # EDN-GTM: A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing
 
-Official Implementation of "EDN-GTM: A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing"    
+This is the official implementation of the paper "A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing"   
+
+(in Proceedings of International Conference on Industry Science and Computer Sciences Innovation 2022 ([iSCSi'22](https://iscsi-conference.org/)), Porto, Portugal, March 9-11, 2022)
 
 Authors: [Le-Anh Tran](https://scholar.google.com/citations?user=WzcUE5YAAAAJ&hl=en), Seokyong Moon, Dong-Chul Park
 
-Paper: [arXiv](https://arxiv.org/abs/2202.04757)
+Paper links:    
+- [arXiv](https://arxiv.org/abs/2202.04757)
+- [Procedia Computer Science](https://www.journals.elsevier.com/procedia-computer-science) (will be available soon)
 
-Blog: [Medium](https://tranlevision.medium.com/edn-gtm-encoder-decoder-network-with-guided-transmission-map-for-single-image-dehazing-78e8036bbaa3)
+Blog: [Towards Data Science](https://tranlevision.medium.com/edn-gtm-encoder-decoder-network-with-guided-transmission-map-for-single-image-dehazing-78e8036bbaa3)
 
 ## I. Requiremtents
 - CUDA 10.0
@@ -119,10 +123,18 @@ $ python train.py
   year={2022}
 }
 ```
+```
+@inproceedings{tran2022novel,
+  title={A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing},
+  author={Tran, Le-Anh and Moon, Seokyong and Park, Dong-Chul},
+  booktitle={International Conference on Industry Science and Computer Sciences Innovation (iSCSi’22)},
+  year={2022}
+}
+```
 
 
 Have fun!
 
 LA Tran
 
-12.2021
+12.2021 (Last update in 03.2022)
