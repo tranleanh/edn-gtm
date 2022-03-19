@@ -13,7 +13,7 @@ i. Abstract:
 ii. Architecture: 
 
 <p align="center">
-<img src="docs/icrl-gan-network-full.jpg" width="800">
+<img src="docs/full_arch.png" width="1000">
 </p>
 
 iii. Results on [Papers With Code](https://paperswithcode.com/):
