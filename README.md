@@ -30,7 +30,7 @@ iv. Paper links:
 
 v. Blog post: [Towards Data Science](https://tranlevision.medium.com/edn-gtm-encoder-decoder-network-with-guided-transmission-map-for-single-image-dehazing-78e8036bbaa3)
 
-## I. Requiremtents
+## I. Requirements
 - CUDA 10.0
 - CUDNN 7.6
 - OpenCV
