@@ -6,31 +6,34 @@ This is the official implementation of the paper "A Novel Encoder-Decoder Networ
 
 Authors: [Le-Anh Tran](https://scholar.google.com/citations?user=WzcUE5YAAAAJ&hl=en), Seokyong Moon, Dong-Chul Park
 
-i. Abstract:   
 
-<p align="justify">A novel Encoder-Decoder Network with Guided Transmission Map (EDN-GTM) for single image dehazing scheme is proposed in this paper. The proposed EDN-GTM takes conventional RGB hazy image in conjunction with its transmission map estimated by adopting dark channel prior as the inputs of the network. The proposed EDN-GTM adopts U-Net for image segmentation as the core network and utilizes various modifications including spatial pyramid pooling module and Swish activation to achieve state-of-the-art dehazing performance. Experiments on benchmark datasets show that the proposed EDN-GTM outperforms most of traditional and deep learning-based image dehazing schemes in terms of PSNR and SSIM metrics. The proposed EDN-GTM furthermore proves its applicability to object detection problems. Specifically, when applied to an image preprocessing tool for driving object detection, the proposed EDN-GTM can efficiently remove haze and significantly improve detection accuracy by 4.73% in terms of mAP measure.</p>
+## I. Introduction
 
-ii. Architecture: 
+i. Paper links:    
+- [arXiv](https://arxiv.org/abs/2202.04757)
+- [Procedia Computer Science](https://www.journals.elsevier.com/procedia-computer-science) (will be available soon)
 
-<p align="center">
-<img src="docs/full_arch.png" width="1000">
-</p>
+ii. Blog post: [Towards Data Science](https://tranlevision.medium.com/edn-gtm-encoder-decoder-network-with-guided-transmission-map-for-single-image-dehazing-78e8036bbaa3)
 
-iii. Results on [Papers With Code](https://paperswithcode.com/):
+iii. Results on [Papers With Code](https://paperswithcode.com/)
 
 - [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-novel-encoder-decoder-network-with-guided/image-dehazing-on-i-haze)](https://paperswithcode.com/sota/image-dehazing-on-i-haze?p=a-novel-encoder-decoder-network-with-guided)    
 - [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-novel-encoder-decoder-network-with-guided/image-dehazing-on-o-haze)](https://paperswithcode.com/sota/image-dehazing-on-o-haze?p=a-novel-encoder-decoder-network-with-guided)    
 - [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-novel-encoder-decoder-network-with-guided/image-dehazing-on-dense-haze)](https://paperswithcode.com/sota/image-dehazing-on-dense-haze?p=a-novel-encoder-decoder-network-with-guided)    
 - [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-novel-encoder-decoder-network-with-guided/nonhomogeneous-image-dehazing-on-nh-haze)](https://paperswithcode.com/sota/nonhomogeneous-image-dehazing-on-nh-haze?p=a-novel-encoder-decoder-network-with-guided)
 
+iv. Abstract:   
 
-iv. Paper links:    
-- [arXiv](https://arxiv.org/abs/2202.04757)
-- [Procedia Computer Science](https://www.journals.elsevier.com/procedia-computer-science) (will be available soon)
+<p align="justify">A novel Encoder-Decoder Network with Guided Transmission Map (EDN-GTM) for single image dehazing scheme is proposed in this paper. The proposed EDN-GTM takes conventional RGB hazy image in conjunction with its transmission map estimated by adopting dark channel prior as the inputs of the network. The proposed EDN-GTM adopts U-Net for image segmentation as the core network and utilizes various modifications including spatial pyramid pooling module and Swish activation to achieve state-of-the-art dehazing performance. Experiments on benchmark datasets show that the proposed EDN-GTM outperforms most of traditional and deep learning-based image dehazing schemes in terms of PSNR and SSIM metrics. The proposed EDN-GTM furthermore proves its applicability to object detection problems. Specifically, when applied to an image preprocessing tool for driving object detection, the proposed EDN-GTM can efficiently remove haze and significantly improve detection accuracy by 4.73% in terms of mAP measure.</p>
 
-v. Blog post: [Towards Data Science](https://tranlevision.medium.com/edn-gtm-encoder-decoder-network-with-guided-transmission-map-for-single-image-dehazing-78e8036bbaa3)
+v. Architecture: 
 
-## I. Requirements
+<p align="center">
+<img src="docs/full_arch.png" width="1000">
+</p>
+
+
+## II. Requirements
 - CUDA 10.0
 - CUDNN 7.6
 - OpenCV
@@ -43,7 +46,7 @@ You can simply run:
 $ pip install -r requirements.txt
 ```
 
-## II. Test using Pre-trained Weights
+## III. Test using Pre-trained Weights
 
 #### 1. Download Pre-trained Weights
 - Download pre-trained weights from [GoogleDrive](https://drive.google.com/drive/folders/1SjakD7bzNbZm5K8KxBYgXE5DgdEjFiQt)
@@ -61,7 +64,7 @@ $ pip install -r requirements.txt
 $ python test_on_images.py
 ```
 
-## III. Train Network
+## IV. Train Network
 
 #### 1. Prepare Dataset
 - Each image in a clean-hazy image pair must have the same name
@@ -83,7 +86,7 @@ $ python train.py
 ```
 
 
-## IV. Results
+## V. Results
 
 #### 1. Quantitative Results
 #### (a) I-HAZE Dataset
@@ -145,7 +148,7 @@ Object detection performances on two sets of hazy (left) and dehazed (right) ima
 
 <img src="docs/applied-to-object-detection.png" width="800">
 
-## Citation
+## VI. Citation
 ```
 @article{tran2022novel,
   title={A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing},
@@ -168,4 +171,4 @@ Have fun!
 
 LA Tran
 
-12.2021 (Last update in 03.2022)
+Dec. 2021
