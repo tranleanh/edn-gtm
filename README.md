@@ -34,14 +34,16 @@ v. Architecture:
 
 
 ## II. Requirements
+
+Main dependencies (or equivalent):
+
 - CUDA 10.0
 - CUDNN 7.6
 - OpenCV
 - Tensorflow 1.14.0
 - Keras 2.1.3
-<!-- - [more](https://pjreddie.com/darknet/yolo/) -->
 
-You can simply run:
+For other packages, simply run:
 ```bashrc
 $ pip install -r requirements.txt
 ```
