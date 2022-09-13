@@ -154,8 +154,6 @@ Object detection performances on two sets of hazy (left) and dehazed (right) ima
 
 ```
 @article{Tran_2022,	
-doi = {10.1016/j.procs.2022.08.082},	
-url = {https://doi.org/10.1016%2Fj.procs.2022.08.082},	
 year = 2022,	
 publisher = {Elsevier {BV}},	
 volume = {204},	
