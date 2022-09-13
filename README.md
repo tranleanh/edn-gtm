@@ -151,21 +151,18 @@ Object detection performances on two sets of hazy (left) and dehazed (right) ima
 <img src="docs/applied-to-object-detection.png" width="800">
 
 ## VI. Citation
+
 ```
-@article{tran2022novel,
-  title={A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing},
-  author={Tran, Le-Anh and Moon, Seokyong and Park, Dong-Chul},
-  journal={arXiv preprint arXiv:2202.04757},
-  year={2022}
-}
-```
-```
-@inproceedings{tran2022novel,
-  title={A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing},
-  author={Tran, Le-Anh and Moon, Seokyong and Park, Dong-Chul},
-  booktitle={International Conference on Industry Science and Computer Sciences Innovation (iSCSi’22)},
-  year={2022}
-}
+@article{Tran_2022,	
+doi = {10.1016/j.procs.2022.08.082},	
+url = {https://doi.org/10.1016%2Fj.procs.2022.08.082},	
+year = 2022,	
+publisher = {Elsevier {BV}},	
+volume = {204},	
+pages = {682--689},	
+author = {Le-Anh Tran and Seokyong Moon and Dong-Chul Park},	
+title = {A novel encoder-decoder network with guided transmission map for single image dehazing},	
+journal = {Procedia Computer Science}}
 ```
 
 
