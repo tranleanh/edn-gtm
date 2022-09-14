@@ -11,7 +11,7 @@ Authors: [Le-Anh Tran](https://scholar.google.com/citations?user=WzcUE5YAAAAJ&hl
 
 i. Links to paer:    
 - Preprint version: [arXiv](https://arxiv.org/abs/2202.04757)
-- Published version: [Procedia Computer Science](https://www.sciencedirect.com/science/article/pii/S1877050922008201?via%3Dihub#!)
+- Published version: [Procedia Computer Science 204](https://www.sciencedirect.com/science/article/pii/S1877050922008201?via%3Dihub#!)
 
 ii. Blog post: [Towards Data Science](https://tranlevision.medium.com/edn-gtm-encoder-decoder-network-with-guided-transmission-map-for-single-image-dehazing-78e8036bbaa3)
 
