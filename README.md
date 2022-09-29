@@ -9,7 +9,7 @@ Authors: [Le-Anh Tran](https://scholar.google.com/citations?user=WzcUE5YAAAAJ&hl
 
 ## I. Introduction
 
-i. Links to paer:    
+i. Links to paper:    
 - Preprint version: [arXiv](https://arxiv.org/abs/2202.04757)
 - Published version: [Procedia Computer Science 204](https://www.sciencedirect.com/science/article/pii/S1877050922008201?via%3Dihub#!)
 
