@@ -91,6 +91,8 @@ $ python train.py
 ## V. Results
 
 #### 1. Quantitative Results
+
+<!---
 #### (a) I-HAZE Dataset
 
 |     |  DCP (TPAMI’10)  | CAP (TIP’15) | MSCNN (ECCV’16) | NLID (CVPR’1) | AOD-Net (ICCV’17) | PPD-Net (CVPRW’18) | EDN-GTM           | 
@@ -118,6 +120,154 @@ $ python train.py
 | :---:     |   :---:          |   :---:            |    :----:         |    :---:        |          :---:    |    :----:           |    :---:        |
 |  PSNR     |   10.57          |    16.62           |    15.40          |    19.23        |      17.39        |  19.88 (2nd)        |   20.24 (1st)   |
 |  SSIM     |   0.5196         |    0.5238          |    0.5693         |    0.7056       |      0.5897       |  0.7173 (2nd)       |   0.7178 (1st)  |
+--->
+
+#### (a) I-HAZE & O-HAZE Datasets
+
+<table>
+  <tr>
+    <th rowspan="2">Approaches</th>
+    <th colspan="2">I-HAZE Dataset</th>
+    <th colspan="2">O-HAZE Dataset</th>
+  </tr>
+  <tr>
+    <th>PSNR</th>
+    <th>SSIM</th>
+    <th>PSNR</th>
+    <th>SSIM</th>
+  </tr>
+  <tr>
+    <td>DCP (TPAMI’10)</td>
+    <td>14.43</td>
+    <td>0.7516</td>
+    <td>16.78</td>
+    <td>0.6532</td>
+  </tr>
+  <tr>
+    <td>CAP (TIP’15)</td>
+    <td>12.24</td>
+    <td>0.6065</td>
+    <td>16.08</td>
+    <td>0.5965</td>
+  </tr>
+  <tr>
+    <td>MSCNN (ECCV’16)</td>
+    <td>15.22</td>
+    <td>0.7545</td>
+    <td>17.56</td>
+    <td>0.6495</td>
+  </tr>
+  <tr>
+    <td>NLID (CVPR’1)</td>
+    <td>14.12</td>
+    <td>0.6537</td>
+    <td>15.98</td>
+    <td>0.5849</td>
+  </tr>
+  <tr>
+    <td>AOD-Net (ICCV’17)</td>
+    <td>13.98</td>
+    <td>0.7323</td>
+    <td>15.03</td>
+    <td>0.5385</td>
+  </tr>
+  <tr>
+    <td>PPD-Net (CVPRW’18)</td>
+    <td>22.53</td>
+    <td><b>0.8705</b> *</td>
+    <td><b>24.24</b> *</td>
+    <td>0.7205</td>
+  </tr>
+  <tr>
+    <td>EDN-GTM</td>
+    <td><b>22.90</b> *</td>
+    <td>0.8270</td>
+    <td>23.46</td>
+    <td><b>0.8198</b> *</td>
+  </tr>
+</table>
+
+
+#### (b) Dense-HAZE & NH-HAZE Datasets
+<table>
+  <tr>
+    <th rowspan="2">Approaches</th>
+    <th colspan="2">Dense-HAZE Dataset</th>
+    <th colspan="2">NH-HAZE Dataset</th>
+  </tr>
+  <tr>
+    <th>PSNR</th>
+    <th>SSIM</th>
+    <th>PSNR</th>
+    <th>SSIM</th>
+  </tr>
+  <tr>
+    <td>DCP (TPAMI’10)</td>
+    <td>10.06</td>
+    <td>0.3856</td>
+    <td>10.57</td>
+    <td>0.5196</td>
+  </tr>
+  <tr>
+    <td>DehazeNet (TIP’16)</td>
+    <td>13.84</td>
+    <td>0.4252</td>
+    <td>16.62</td>
+    <td>0.5238</td>
+  </tr>
+  <tr>
+    <td>AOD-Net (ICCV’17)</td>
+    <td>13.14</td>
+    <td>0.4144</td>
+    <td>15.40</td>
+    <td>0.5693</td>
+  </tr>
+  <tr>
+    <td>GridDehazeNet (ICCV’19)</td>
+    <td>13.31</td>
+    <td>0.3681</td>
+    <td>13.80</td>
+    <td>0.5370</td>
+  </tr>
+  <tr>
+    <td>FFA-Net (AAAI’20)</td>
+    <td>14.39</td>
+    <td>0.4524</td>
+    <td>19.87</td>
+    <td>0.6915</td>
+  </tr>
+  <tr>
+    <td>MSBDN (CVPR’20)</td>
+    <td>15.37</td>
+    <td>0.4858</td>
+    <td>19.23</td>
+    <td>0.7056</td>
+  </tr>
+  <tr>
+    <td>KDDN (CVPR’20)</td>
+    <td>14.28</td>
+    <td>0.4074</td>
+    <td>17.39</td>
+    <td>0.5897</td>
+  </tr>
+  <tr>
+    <td>AECR-Net (CVPR’21)</td>
+    <td><b>15.80</b> *</td>
+    <td>0.4660</td>
+    <td>19.88</td>
+    <td>0.7173</td>
+  </tr>
+  <tr>
+    <td>EDN-GTM</td>
+    <td>15.43</td>
+    <td><b>0.5200</b> *</td>
+    <td><b>20.24</b> *</td>
+    <td><b>0.7178</b> *</td>
+  </tr>
+</table>
+
+
+
 
 #### 2. Qualitative Results
 
