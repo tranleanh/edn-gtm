@@ -1,18 +1,19 @@
-# EDN-GTM: A novel Encoder-Decoder Network with Guided Transmission Map for single image dehazing
+# EDN-GTM: Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing
 
-The official implementation of the paper "A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing"   
+<!--- The official implementation of the paper "A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing"   
 
 (Presented in International Conference on Industry Science and Computer Sciences Innovation 2022 ([iSCSi'22](https://iscsi-conference.org/)), Porto, Portugal, March 9-11, 2022)
 
-Authors: [Le-Anh Tran](https://scholar.google.com/citations?user=WzcUE5YAAAAJ&hl=en), Seokyong Moon, Dong-Chul Park
+Authors: [Le-Anh Tran](https://scholar.google.com/citations?user=WzcUE5YAAAAJ&hl=en), Seokyong Moon, Dong-Chul Park --->
 
 
 ## I. Introduction
 
-i. Publication: [Procedia Computer Science 204](https://www.sciencedirect.com/science/article/pii/S1877050922008201?via%3Dihub#!)   
+<!--- i. Publication: [Procedia Computer Science 204](https://www.sciencedirect.com/science/article/pii/S1877050922008201?via%3Dihub#!)   
 
-<!--- Preprint version: [arXiv](https://arxiv.org/abs/2202.04757) Published version: [Procedia Computer Science 204](https://www.sciencedirect.com/science/article/pii/S1877050922008201?via%3Dihub#!) --->
+ Preprint version: [arXiv](https://arxiv.org/abs/2202.04757) Published version: [Procedia Computer Science 204](https://www.sciencedirect.com/science/article/pii/S1877050922008201?via%3Dihub#!) --->
 
+<!---
 ii. Blog: [Towards Data Science](https://tranlevision.medium.com/edn-gtm-encoder-decoder-network-with-guided-transmission-map-for-single-image-dehazing-78e8036bbaa3)
 
 iii. Results on [Papers With Code](https://paperswithcode.com/)
@@ -26,7 +27,9 @@ iv. Abstract:
 
 <p align="justify">A novel Encoder-Decoder Network with Guided Transmission Map (EDN-GTM) for single image dehazing scheme is proposed in this paper. The proposed EDN-GTM takes conventional RGB hazy image in conjunction with its transmission map estimated by adopting dark channel prior as the inputs of the network. The proposed EDN-GTM adopts U-Net for image segmentation as the core network and utilizes various modifications including spatial pyramid pooling module and Swish activation to achieve state-of-the-art dehazing performance. Experiments on benchmark datasets show that the proposed EDN-GTM outperforms most of traditional and deep learning-based image dehazing schemes in terms of PSNR and SSIM metrics. The proposed EDN-GTM furthermore proves its applicability to object detection problems. Specifically, when applied to an image preprocessing tool for driving object detection, the proposed EDN-GTM can efficiently remove haze and significantly improve detection accuracy by 4.73% in terms of mAP measure.</p>
 
-v. Architecture: 
+v. Architecture: --->
+
+Network Architecture:
 
 <p align="center">
 <img src="docs/full_arch.png" width="1000">
@@ -66,7 +69,7 @@ $ pip install -r requirements.txt
 $ python test_on_images.py
 ```
 
-## IV. Train Network
+## IV. Train
 
 #### 1. Prepare Dataset
 - Each image in a clean-hazy image pair must have the same name
@@ -158,7 +161,7 @@ $ python train.py
     <td>0.6495</td>
   </tr>
   <tr>
-    <td>NLID (CVPR’1)</td>
+    <td>NLID (CVPR’16)</td>
     <td>14.12</td>
     <td>0.6537</td>
     <td>15.98</td>
@@ -172,6 +175,20 @@ $ python train.py
     <td>0.5385</td>
   </tr>
   <tr>
+    <td>FFA-Net (AAAI'20)</td>
+    <td>17.20</td>
+    <td>0.7943</td>
+    <td>22.74</td>
+    <td>0.8339</td>
+  </tr>
+  <tr>
+    <td>Cycle-Dehaze (CVPR'18)</td>
+    <td>18.03</td>
+    <td>0.8000</td>
+    <td>19.92</td>
+    <td>0.6400</td>
+  </tr>
+  <tr>
     <td>PPD-Net (CVPRW’18)</td>
     <td>22.53</td>
     <td><b>0.8705</b> *</td>
@@ -179,7 +196,7 @@ $ python train.py
     <td>0.7205</td>
   </tr>
   <tr>
-    <td>EDN-GTM</td>
+    <td>EDN-GTM (Ours)</td>
     <td><b>22.90</b> *</td>
     <td>0.8270</td>
     <td>23.46</td>
@@ -258,7 +275,7 @@ $ python train.py
     <td>0.7173</td>
   </tr>
   <tr>
-    <td>EDN-GTM</td>
+    <td>EDN-GTM (Ours)</td>
     <td>15.43</td>
     <td><b>0.5200</b> *</td>
     <td><b>20.24</b> *</td>
