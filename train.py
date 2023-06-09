@@ -76,13 +76,16 @@ def train(n_images, batch_size, log_dir, epoch_num, critic_updates=5):
 
     log_path = './logs'
 
-    for epoch in tqdm.tqdm(range(epoch_num)):
+    for e, epoch in enumerate(range(epoch_num)):
 
         permutated_indexes = np.random.permutation(x_train.shape[0])
 
         d_losses = []
         d_on_g_losses = []
-        for index in range(int(x_train.shape[0] / batch_size)):
+
+        print('Epoch ' + str(e+1) + ' / ' + str(epoch_num))
+
+        for index in tqdm(range(int(x_train.shape[0] / batch_size))):
             batch_indexes = permutated_indexes[index*batch_size:(index+1)*batch_size]
 
             image_blur_batch = x_train[batch_indexes]
