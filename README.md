@@ -95,7 +95,7 @@ $ python train.py
 
 ## Results
 
-#### 1. Quantitative Results
+#### 1. Quantitative Results (Best: &#129351;, Second-best: &#129352;)
 
 <!---
 #### (a) I-HAZE Dataset
@@ -127,11 +127,11 @@ $ python train.py
 |  SSIM     |   0.5196         |    0.5238          |    0.5693         |    0.7056       |      0.5897       |  0.7173 (2nd)       |   0.7178 (1st)  |
 --->
 
-#### (a) I-HAZE & O-HAZE Datasets
+#### (a) I-HAZE & O-HAZE Datasets:
 
 <table>
   <tr>
-    <th rowspan="2">Type</th>
+    <th rowspan="2">Types</th>
     <th rowspan="2">Approaches</th>
     <th colspan="2">I-HAZE Dataset</th>
     <th colspan="2">O-HAZE Dataset</th>
@@ -145,6 +145,14 @@ $ python train.py
   </tr>
   <tr>
     <th rowspan="4">Prior</th>
+    <td>CAP (TIP’15)</td>
+    <td>12.24</td>
+    <td>0.6065</td>
+    <td>16.08</td>
+    <td>0.5965</td>
+    <td>-</td>
+  </tr>
+  <tr> 
     <td>DCP (TPAMI’10)</td>
     <td>14.43</td>
     <td>0.7516</td>
@@ -153,19 +161,11 @@ $ python train.py
     <td>-</td>
   </tr>
   <tr>
-    <td>CAP (TIP’15)</td>
-    <td>12.24</td>
-    <td>0.6065</td>
-    <td>16.08</td>
-    <td>0.5965</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>MSCNN (ECCV’16)</td>
-    <td>15.22</td>
-    <td>0.7545</td>
-    <td>17.56</td>
-    <td>0.6495</td>
+    <td>BCCR (ICCV’13)</td>
+    <td>14.15</td>
+    <td>0.7046</td>
+    <td>14.07</td>
+    <td>0.5103</td>
     <td>-</td>
   </tr>
   <tr>
@@ -206,7 +206,7 @@ $ python train.py
     <td>17.20</td>
     <td>0.7943</td>
     <td>22.74</td>
-    <td>0.8339</td>
+    <td>0.8339 &#129351;</td>
     <td>4.46M</td>
   </tr>
   <tr>
@@ -228,8 +228,8 @@ $ python train.py
   <tr>
     <td>PPD-Net (CVPRW’18)</td>
     <td>22.53</td>
-    <td><b>0.8705</b> *</td>
-    <td><b>24.24</b> *</td>
+    <td>0.8705 &#129351;</td>
+    <td>24.24 &#129351;</td>
     <td>0.7205</td>
     <td>31.28M</td>
   </tr>
@@ -244,35 +244,48 @@ $ python train.py
   </tr>
   <tr>
     <td><b>EDN-GTM-B</b></td>
-    <td><i>22.66</i></td>
-    <td>0.8311</td>
+    <td>22.66 &#129352;</td>
+    <td>0.8311 &#129352;</td>
     <td>23.43</td>
-    <td>0.8283</td>
+    <td>0.8283 &#129352;</td>
     <td>33M</td>
   </tr>
   <tr>
     <td><b>EDN-GTM-L</b></td>
-    <td><em>22.90</em></td>
+    <td>22.90 &#129351;</td>
     <td>0.8270</td>
-    <td>23.46</td>
-    <td><b>0.8198</b> *</td>
-    <td> <center> 49M </center></td>
+    <td>23.46 &#129352;</td>
+    <td>0.8198</td>
+    <td>49M</td>
   </tr>
 </table>
+
+
 
 
 #### (b) Dense-HAZE & NH-HAZE Datasets
 <table>
   <tr>
+    <th rowspan="2">Types</th>
     <th rowspan="2">Approaches</th>
     <th colspan="2">Dense-HAZE Dataset</th>
     <th colspan="2">NH-HAZE Dataset</th>
+    <th rowspan="2">#Params</th>
   </tr>
   <tr>
     <th>PSNR</th>
     <th>SSIM</th>
     <th>PSNR</th>
     <th>SSIM</th>
+  </tr>
+  <tr>
+    <th rowspan="4">Prior</th>
+    <td>NLID (CVPR’16)</td>
+    <td>9.15</td>
+    <td>0.4141</td>
+    <td>8.94</td>
+    <td>0.3584</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>DCP (TPAMI’10)</td>
@@ -280,13 +293,32 @@ $ python train.py
     <td>0.3856</td>
     <td>10.57</td>
     <td>0.5196</td>
+    <td>-</td>
   </tr>
   <tr>
+    <td>CAP (TIP’15)</td>
+    <td>11.01</td>
+    <td>0.4874</td>
+    <td>12.58</td>
+    <td>0.4231</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>BCCR (ICCV’13)</td>
+    <td>11.24</td>
+    <td>0.3514</td>
+    <td>12.48</td>
+    <td>0.4233</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th rowspan="7">CNN-based</th>
     <td>DehazeNet (TIP’16)</td>
     <td>13.84</td>
     <td>0.4252</td>
     <td>16.62</td>
     <td>0.5238</td>
+    <td>0.009M</td>
   </tr>
   <tr>
     <td>AOD-Net (ICCV’17)</td>
@@ -294,6 +326,7 @@ $ python train.py
     <td>0.4144</td>
     <td>15.40</td>
     <td>0.5693</td>
+    <td>0.002M</td>
   </tr>
   <tr>
     <td>GridDehazeNet (ICCV’19)</td>
@@ -301,20 +334,7 @@ $ python train.py
     <td>0.3681</td>
     <td>13.80</td>
     <td>0.5370</td>
-  </tr>
-  <tr>
-    <td>FFA-Net (AAAI’20)</td>
-    <td>14.39</td>
-    <td>0.4524</td>
-    <td>19.87</td>
-    <td>0.6915</td>
-  </tr>
-  <tr>
-    <td>MSBDN (CVPR’20)</td>
-    <td>15.37</td>
-    <td>0.4858</td>
-    <td>19.23</td>
-    <td>0.7056</td>
+    <td>0.956M</td>
   </tr>
   <tr>
     <td>KDDN (CVPR’20)</td>
@@ -322,20 +342,56 @@ $ python train.py
     <td>0.4074</td>
     <td>17.39</td>
     <td>0.5897</td>
+    <td>5.99M</td>
+  </tr>
+  <tr>
+    <td>FFA-Net (AAAI’20)</td>
+    <td>14.39</td>
+    <td>0.4524</td>
+    <td>19.87</td>
+    <td>0.6915</td>
+    <td>4.46M</td>
+  </tr>
+  <tr>
+    <td>MSBDN (CVPR’20)</td>
+    <td>15.37</td>
+    <td>0.4858</td>
+    <td>19.23</td>
+    <td>0.7056</td>
+    <td>31.35M</td>
   </tr>
   <tr>
     <td>AECR-Net (CVPR’21)</td>
-    <td><b>15.80</b> *</td>
+    <td>15.80 &#129351;</td>
     <td>0.4660</td>
-    <td>19.88</td>
-    <td>0.7173</td>
+    <td>19.88 &#129352;</td>
+    <td>0.7173 &#129352;</td>
+    <td>2.61M</td>
   </tr>
   <tr>
-    <td>EDN-GTM (Ours)</td>
+    <th rowspan="3">CNN-based (ours)</th>
+    <td><b>EDN-GTM-S</b></td>
+    <td>15.20</td>
+    <td>0.5160</td>
+    <td>19.04</td>
+    <td>0.6961</td>
+    <td>8.4M</td>
+  </tr>
+  <tr>
+    <td><b>EDN-GTM-B</b></td>
+    <td>15.46 &#129352;</td>
+    <td>0.5359 &#129351;</td>
+    <td>19.80</td>
+    <td>0.7064</td>
+    <td>33M</td>
+  </tr>
+  <tr>
+    <td><b>EDN-GTM-L</b></td>
     <td>15.43</td>
-    <td><b>0.5200</b> *</td>
-    <td><b>20.24</b> *</td>
-    <td><b>0.7178</b> *</td>
+    <td>0.5200 &#129352;</td>
+    <td>20.24 &#129351;</td>
+    <td>0.7178 &#129351;</td>
+    <td>49M</td>
   </tr>
 </table>
 
