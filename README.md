@@ -1,4 +1,4 @@
-# EDN-GTM: Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing
+# EDN-GTM: Encoder-Decoder Network with Guided Transmission Map for Effective Image Dehazing
 
 <!--- The official implementation of the paper "A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing"   
 
@@ -6,8 +6,10 @@
 
 Authors: [Le-Anh Tran](https://scholar.google.com/citations?user=WzcUE5YAAAAJ&hl=en), Seokyong Moon, Dong-Chul Park --->
 
+<!-- 
+## Introduction
 
-## I. Introduction
+An Encoder-Decoder Network with Guided Transmission Map (EDN-GTM) for single image dehazing scheme is proposed in this paper. The proposed EDN-GTM takes conventional RGB hazy image in conjunction with its transmission map estimated by adopting dark channel prior as the inputs of the network. The proposed EDN-GTM utilizes U-Net for image segmentation as the core network and utilizes various modifications including spatial pyramid pooling module and Swish activation to achieve state-of-the-art dehazing performance. Experiments on benchmark datasets show that the proposed EDN-GTM outperforms most of traditional and deep learning-based image dehazing schemes in terms of PSNR and SSIM metrics. The proposed EDN-GTM furthermore proves its applicability to object detection problems. Specifically, when applied to an image preprocessing tool for driving object detection, the proposed EDN-GTM can efficiently remove haze and significantly improve detection accuracy by 4.73% in terms of mAP measure.  -->
 
 <!--- i. Publication: [Procedia Computer Science 204](https://www.sciencedirect.com/science/article/pii/S1877050922008201?via%3Dihub#!)   
 
@@ -32,11 +34,11 @@ v. Architecture: --->
 Network Architecture:
 
 <p align="center">
-<img src="docs/full_arch.png" width="1000">
+<img src="docs/EDNGTM_Architecture_v4.png" width="1000">
 </p>
 
 
-## II. Requirements
+## Requirements
 
 Main dependencies (or equivalent):
 
@@ -51,7 +53,7 @@ For other packages, simply run:
 $ pip install -r requirements.txt
 ```
 
-## III. Test using Pre-trained Weights
+## Test using Pre-trained Weights
 
 #### 1. Download Pre-trained Weights
 - Download pre-trained weights from [GoogleDrive](https://drive.google.com/drive/folders/1SjakD7bzNbZm5K8KxBYgXE5DgdEjFiQt)
@@ -69,7 +71,7 @@ $ pip install -r requirements.txt
 $ python test_on_images.py
 ```
 
-## IV. Train
+## Train
 
 #### 1. Prepare Dataset
 - Each image in a clean-hazy image pair must have the same name
@@ -91,7 +93,7 @@ $ python train.py
 ```
 
 
-## V. Results
+## Results
 
 #### 1. Quantitative Results
 
@@ -129,9 +131,11 @@ $ python train.py
 
 <table>
   <tr>
+    <th rowspan="2">Type</th>
     <th rowspan="2">Approaches</th>
     <th colspan="2">I-HAZE Dataset</th>
     <th colspan="2">O-HAZE Dataset</th>
+    <th rowspan="2">#Params</th>
   </tr>
   <tr>
     <th>PSNR</th>
@@ -140,11 +144,13 @@ $ python train.py
     <th>SSIM</th>
   </tr>
   <tr>
+    <th rowspan="4">Prior</th>
     <td>DCP (TPAMI’10)</td>
     <td>14.43</td>
     <td>0.7516</td>
     <td>16.78</td>
     <td>0.6532</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>CAP (TIP’15)</td>
@@ -152,6 +158,7 @@ $ python train.py
     <td>0.6065</td>
     <td>16.08</td>
     <td>0.5965</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>MSCNN (ECCV’16)</td>
@@ -159,6 +166,7 @@ $ python train.py
     <td>0.7545</td>
     <td>17.56</td>
     <td>0.6495</td>
+    <td>-</td>
   </tr>
   <tr>
     <td>NLID (CVPR’16)</td>
@@ -166,13 +174,32 @@ $ python train.py
     <td>0.6537</td>
     <td>15.98</td>
     <td>0.5849</td>
+    <td>-</td>
   </tr>
   <tr>
+    <th rowspan="7">CNN-based</th>
     <td>AOD-Net (ICCV’17)</td>
     <td>13.98</td>
     <td>0.7323</td>
     <td>15.03</td>
     <td>0.5385</td>
+    <td>0.002M</td>
+  </tr>
+  <tr>
+    <td>MSCNN (ECCV’16)</td>
+    <td>15.22</td>
+    <td>0.7545</td>
+    <td>17.56</td>
+    <td>0.6495</td>
+    <td>0.008M</td>
+  </tr>
+  <tr>
+    <td>DehazeNet (TIP’16)</td>
+    <td>15.93</td>
+    <td>0.7734</td>
+    <td>19.99</td>
+    <td>0.6885</td>
+    <td>0.009M</td>
   </tr>
   <tr>
     <td>FFA-Net (AAAI'20)</td>
@@ -180,6 +207,15 @@ $ python train.py
     <td>0.7943</td>
     <td>22.74</td>
     <td>0.8339</td>
+    <td>4.46M</td>
+  </tr>
+  <tr>
+    <td>CycleGAN (ICCV'17)</td>
+    <td>17.80</td>
+    <td>0.7500</td>
+    <td>18.92</td>
+    <td>0.5300</td>
+    <td>11.38M</td>
   </tr>
   <tr>
     <td>Cycle-Dehaze (CVPR'18)</td>
@@ -187,6 +223,7 @@ $ python train.py
     <td>0.8000</td>
     <td>19.92</td>
     <td>0.6400</td>
+    <td>11.38M</td>
   </tr>
   <tr>
     <td>PPD-Net (CVPRW’18)</td>
@@ -194,13 +231,32 @@ $ python train.py
     <td><b>0.8705</b> *</td>
     <td><b>24.24</b> *</td>
     <td>0.7205</td>
+    <td>31.28M</td>
   </tr>
   <tr>
-    <td>EDN-GTM (Ours)</td>
-    <td><b>22.90</b> *</td>
+    <th rowspan="3">CNN-based (ours)</th>
+    <td><b>EDN-GTM-S</b></td>
+    <td>21.23</td>
+    <td>0.8181</td>
+    <td>22.91</td>
+    <td>0.8016</td>
+    <td>8.4M</td>
+  </tr>
+  <tr>
+    <td><b>EDN-GTM-B</b></td>
+    <td><i>22.66</i></td>
+    <td>0.8311</td>
+    <td>23.43</td>
+    <td>0.8283</td>
+    <td>33M</td>
+  </tr>
+  <tr>
+    <td><b>EDN-GTM-L</b></td>
+    <td><em>22.90</em></td>
     <td>0.8270</td>
     <td>23.46</td>
     <td><b>0.8198</b> *</td>
+    <td> <center> 49M </center></td>
   </tr>
 </table>
 
@@ -317,7 +373,7 @@ Object detection performances on two sets of hazy (left) and dehazed (right) ima
 
 <img src="docs/applied-to-object-detection.png" width="800">
 
-## VI. Citation
+## Citation
 
 ```
 @article{Tran_2022,	
