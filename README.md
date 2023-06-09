@@ -429,7 +429,7 @@ Object detection performances on two sets of hazy (left) and dehazed (right) ima
 
 <img src="docs/applied-to-object-detection.png" width="800">
 
-## Citation
+<!-- ## Citation
 
 ```
 @article{Tran_2022,	
@@ -440,11 +440,9 @@ pages = {682--689},
 author = {Le-Anh Tran and Seokyong Moon and Dong-Chul Park},	
 title = {A novel encoder-decoder network with guided transmission map for single image dehazing},	
 journal = {Procedia Computer Science}}
-```
+``` -->
 
 
 Have fun!
 
 LA Tran
-
-Dec. 2021
