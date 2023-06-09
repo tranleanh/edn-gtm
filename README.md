@@ -31,11 +31,15 @@ iv. Abstract:
 
 v. Architecture: --->
 
+## Introduction
+
 Network Architecture:
 
 <p align="center">
 <img src="docs/EDNGTM_Architecture_v4.png" width="1000">
 </p>
+
+<!-- Model Checklist: -->
 
 
 ## Requirements
