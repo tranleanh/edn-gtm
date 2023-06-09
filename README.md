@@ -420,9 +420,15 @@ $ python train.py
 #### 3. Application to Object Detection
 
 #### (a) Dehazing in Driving Scenes
-Visual results on synthesized hazy driving scenes (left: synthesized hazy image, right: dehazed image).
+Visual dehazing results on synthetic hazy scenes:
 
-<img src="docs/waymo_dehazed.png" width="800">
+<!-- <img src="docs/waymo_dehazed.png" width="800"> -->
+<img src="docs/HazyWAYMO.png" width="800">
+
+Visual dehazing results on realistic hazy scenes:
+
+<!-- <img src="docs/waymo_dehazed.png" width="800"> -->
+<img src="docs/FoggyDriving.png" width="800">
 
 #### (b) Object Detection Performances
 Object detection performances on two sets of hazy (left) and dehazed (right) images (red: ground-truth box, green: predicted box, blue: zoom-in region).
