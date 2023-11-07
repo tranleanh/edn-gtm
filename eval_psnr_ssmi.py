@@ -5,23 +5,6 @@ from skimage.metrics import structural_similarity as cal_ssim
 import glob
 
 
-#s = ssim(imageA, imageB)
-# s = measure.compare_ssim(imageA, imageB)
-
-# def cal_ssim(y_true , y_pred):
-#     u_true = np.mean(y_true)
-#     u_pred = np.mean(y_pred)
-#     var_true = np.var(y_true)
-#     var_pred = np.var(y_pred)
-#     std_true = np.sqrt(var_true)
-#     std_pred = np.sqrt(var_pred)
-#     c1 = np.square(0.01*7)
-#     c2 = np.square(0.03*7)
-#     ssim = (2 * u_true * u_pred + c1) * (2 * std_pred * std_true + c2)
-#     denom = (u_true ** 2 + u_pred ** 2 + c1) * (var_pred + var_true + c2)
-#     return ssim / denom
-
-
 def get_file_name(path):
     basename = os.path.basename(path)
     onlyname = os.path.splitext(basename)[0]
@@ -44,10 +27,8 @@ for path in testset:
 	fname = get_file_name(path)
 
 	pred = cv2.imread(f"./{output_folder}/{fname}.jpg")
-	pred = cv2.resize(pred, (img_size,img_size))
 
 	gt = cv2.imread(path)
-	gt = cv2.resize(gt, (img_size,img_size))
 
 	psnr = cv2.PSNR(pred, gt)
 	ssmi = cal_ssim(gt, pred, data_range=pred.max() - pred.min(), multichannel=True)
