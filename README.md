@@ -241,8 +241,8 @@ $ python train.py
   <tr>
     <th rowspan="2">Types</th>
     <th rowspan="2">Methods</th>
-    <th colspan="2">I-HAZE Dataset</th>
-    <th colspan="2">O-HAZE Dataset</th>
+    <th colspan="2">I-HAZE</th>
+    <th colspan="2">O-HAZE</th>
     <th rowspan="2">#Params</th>
     <th rowspan="2">MACs</th>
   </tr>
