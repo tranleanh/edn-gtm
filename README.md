@@ -99,11 +99,11 @@ $ python train.py
 
 ## Results
 
-#### 1. Quantitative Results (Best: &#129351;, Second-best: &#129352;)
-
+#### 1. Quantitative Results (#Params: Number of parameters, MACs: multiply-accumulate operations measured on 512x512 input)
 
 #### (a) I-HAZE & O-HAZE Datasets:
 
+<!---
 <table>
   <tr>
     <th rowspan="2">Types</th>
@@ -234,11 +234,162 @@ $ python train.py
     <td>49M</td>
   </tr>
 </table>
+--->
+
+
+<table>
+  <tr>
+    <th rowspan="2">Types</th>
+    <th rowspan="2">Methods</th>
+    <th colspan="2">I-HAZE Dataset</th>
+    <th colspan="2">O-HAZE Dataset</th>
+    <th rowspan="2">#Params</th>
+    <th rowspan="2">MACs</th>
+  </tr>
+  <tr>
+    <th>PSNR</th>
+    <th>SSIM</th>
+    <th>PSNR</th>
+    <th>SSIM</th>
+  </tr>
+  <tr>
+    <th rowspan="4">Prior</th>
+    <td>CAP</td>
+    <td>12.24</td>
+    <td>0.6065</td>
+    <td>16.08</td>
+    <td>0.5965</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr> 
+    <td>DCP</td>
+    <td>14.43</td>
+    <td>0.7516</td>
+    <td>16.78</td>
+    <td>0.6532</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>BCCR</td>
+    <td>14.15</td>
+    <td>0.7046</td>
+    <td>14.07</td>
+    <td>0.5103</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>NLID</td>
+    <td>14.12</td>
+    <td>0.6537</td>
+    <td>15.98</td>
+    <td>0.5849</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th rowspan="7">CNN</th>
+    <td>AOD-Net</td>
+    <td>13.98</td>
+    <td>0.7323</td>
+    <td>15.03</td>
+    <td>0.5385</td>
+    <td>0.002M</td>
+    <td>0.46G</td>
+  </tr>
+  <tr>
+    <td>MSCNN</td>
+    <td>15.22</td>
+    <td>0.7545</td>
+    <td>17.56</td>
+    <td>0.6495</td>
+    <td>0.008M</td>
+    <td>2.10G</td>
+  </tr>
+  <tr>
+    <td>DehazeNet</td>
+    <td>15.93</td>
+    <td>0.7734</td>
+    <td>19.99</td>
+    <td>0.6885</td>
+    <td>0.009M</td>
+    <td>2.32G</td>
+  </tr>
+  <tr>
+    <td>FFA-Net</td>
+    <td>17.20</td>
+    <td>0.7943</td>
+    <td>22.74</td>
+    <td>0.8339</td>
+    <td>4.46M</td>
+    <td>1151G</td>
+  </tr>
+  <tr>
+    <td>CycleGAN</td>
+    <td>17.80</td>
+    <td>0.7500</td>
+    <td>18.92</td>
+    <td>0.5300</td>
+    <td>11.38M</td>
+    <td>232G</td>
+  </tr>
+  <tr>
+    <td>Cycle-Dehaze</td>
+    <td>18.03</td>
+    <td>0.8000</td>
+    <td>19.92</td>
+    <td>0.6400</td>
+    <td>11.38M</td>
+    <td>232G</td>
+  </tr>
+  <tr>
+    <td>PPD-Net</td>
+    <td>22.53</td>
+    <td>0.8705</td>
+    <td>24.24</td>
+    <td>0.7205</td>
+    <td>31.28M</td>
+    <td>204G</td>
+  </tr>
+  <tr>
+    <th rowspan="3">CNN (ours)</th>
+    <td><b>EDN-GTM-S</b></td>
+    <td>21.23</td>
+    <td>0.8181</td>
+    <td>22.91</td>
+    <td>0.8016</td>
+    <td>8.4M</td>
+    <td>56G</td>
+  </tr>
+  <tr>
+    <td><b>EDN-GTM-B</b></td>
+    <td>22.66</td>
+    <td>0.8311</td>
+    <td>23.43</td>
+    <td>0.8283</td>
+    <td>33M</td>
+    <td>220G</td>
+  </tr>
+  <tr>
+    <td><b>EDN-GTM-L</b></td>
+    <td>22.90</td>
+    <td>0.8270</td>
+    <td>23.46</td>
+    <td>0.8198</td>
+    <td>49M</td>
+    <td>308G</td>
+  </tr>
+</table>
+
 
 
 
 
 #### (b) Dense-HAZE & NH-HAZE Datasets
+
+<!---
 <table>
   <tr>
     <th rowspan="2">Types</th>
@@ -369,6 +520,153 @@ $ python train.py
     <td>49M</td>
   </tr>
 </table>
+--->
+
+<table>
+  <tr>
+    <th rowspan="2">Types</th>
+    <th rowspan="2">Methods</th>
+    <th colspan="2">Dense-HAZE</th>
+    <th colspan="2">NH-HAZE</th>
+    <th rowspan="2">#Params</th>
+    <th rowspan="2">MACs</th>
+  </tr>
+  <tr>
+    <th>PSNR</th>
+    <th>SSIM</th>
+    <th>PSNR</th>
+    <th>SSIM</th>
+  </tr>
+  <tr>
+    <th rowspan="4">Prior</th>
+    <td>NLID</td>
+    <td>9.15</td>
+    <td>0.4141</td>
+    <td>8.94</td>
+    <td>0.3584</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>DCP</td>
+    <td>10.06</td>
+    <td>0.3856</td>
+    <td>10.57</td>
+    <td>0.5196</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>CAP</td>
+    <td>11.01</td>
+    <td>0.4874</td>
+    <td>12.58</td>
+    <td>0.4231</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>BCCR</td>
+    <td>11.24</td>
+    <td>0.3514</td>
+    <td>12.48</td>
+    <td>0.4233</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th rowspan="7">CNN</th>
+    <td>DehazeNet</td>
+    <td>13.84</td>
+    <td>0.4252</td>
+    <td>16.62</td>
+    <td>0.5238</td>
+    <td>0.009M</td>
+  </tr>
+  <tr>
+    <td>AOD-Net</td>
+    <td>13.14</td>
+    <td>0.4144</td>
+    <td>15.40</td>
+    <td>0.5693</td>
+    <td>0.002M</td>
+    <td>0.46G</td>
+  </tr>
+  <tr>
+    <td>GridDehaze</td>
+    <td>13.31</td>
+    <td>0.3681</td>
+    <td>13.80</td>
+    <td>0.5370</td>
+    <td>0.956M</td>
+    <td>85.9G</td>
+  </tr>
+  <tr>
+    <td>KDDN</td>
+    <td>14.28</td>
+    <td>0.4074</td>
+    <td>17.39</td>
+    <td>0.5897</td>
+    <td>5.99M</td>
+    <td>40.6G</td>
+  </tr>
+  <tr>
+    <td>FFA-Net</td>
+    <td>14.39</td>
+    <td>0.4524</td>
+    <td>19.87</td>
+    <td>0.6915</td>
+    <td>4.46M</td>
+    <td>1151G</td>
+  </tr>
+  <tr>
+    <td>MSBDN</td>
+    <td>15.37</td>
+    <td>0.4858</td>
+    <td>19.23</td>
+    <td>0.7056</td>
+    <td>31.35M</td>
+    <td>166G</td>
+  </tr>
+  <tr>
+    <td>AECR-Net</td>
+    <td>15.80</td>
+    <td>0.4660</td>
+    <td>19.88</td>
+    <td>0.7173</td>
+    <td>2.61M</td>
+    <td>209G</td>
+  </tr>
+  <tr>
+    <th rowspan="3">CNN (ours)</th>
+    <td><b>EDN-GTM-S</b></td>
+    <td>15.20</td>
+    <td>0.5160</td>
+    <td>19.04</td>
+    <td>0.6961</td>
+    <td>8.4M</td>
+    <td>56G</td>
+  </tr>
+  <tr>
+    <td><b>EDN-GTM-B</b></td>
+    <td>15.46</td>
+    <td>0.5359</td>
+    <td>19.80</td>
+    <td>0.7064</td>
+    <td>33M</td>
+    <td>220G</td>
+  </tr>
+  <tr>
+    <td><b>EDN-GTM-L</b></td>
+    <td>15.43</td>
+    <td>0.5200</td>
+    <td>20.24</td>
+    <td>0.7178</td>
+    <td>49M</td>
+    <td>308G</td>
+  </tr>
+</table>
+
 
 
 
@@ -377,19 +675,19 @@ $ python train.py
 
 #### (a) I-HAZE Dataset
 
-<img src="docs/dehazed-ihaze.jpg" width="800">
+<img src="docs/i-haze.png" width="800">
 
 #### (b) O-HAZE Dataset
 
-<img src="docs/dehazed-ohaze.jpg" width="800">
+<img src="docs/o-haze.png" width="800">
 
 #### (c) Dense-HAZE Dataset
 
-<img src="docs/dehazed-densehaze.jpg" width="800">
+<img src="docs/dense-haze.png" width="800">
 
 #### (d) NH-HAZE Dataset
 
-<img src="docs/dehazed-nhhaze.jpg" width="800">
+<img src="docs/nh-haze.png" width="800">
 
 
 #### 3. Application to Object Detection
