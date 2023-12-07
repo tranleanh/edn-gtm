@@ -31,6 +31,13 @@ iv. Abstract:
 
 v. Architecture: --->
 
+## Updates
+
+The following items are about to be uploaded:
+
+- [ ] Results on SOTS-Outdoor and HSTS datasets
+- [ ] Pre-trained models for test on SOTS-Outdoor and HSTS datasets
+
 ## Introduction
 
 Network Architecture:
