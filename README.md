@@ -35,8 +35,8 @@ v. Architecture: --->
 
 The following items are about to be uploaded:
 
+- [x] Pre-trained models for test on SOTS-Outdoor and HSTS datasets
 - [ ] Results on SOTS-Outdoor and HSTS datasets
-- [ ] Pre-trained models for test on SOTS-Outdoor and HSTS datasets
 
 ## Introduction
 
@@ -68,8 +68,8 @@ $ pip install -r requirements.txt
 
 #### 1. Download Pre-trained Weights
 - Download pre-trained weights from [GoogleDrive](https://drive.google.com/drive/folders/1SjakD7bzNbZm5K8KxBYgXE5DgdEjFiQt)
-- There are 4 weight files available for test on I-HAZE, O-HAZE, Dense-HAZE, NH-HAZE datasets (respective to their filenames)
-- Make a folder 'weights' to locate downloaded weight files
+- Pre-trained weights are available for test on: I-HAZE, O-HAZE, Dense-HAZE, NH-HAZE, SOTS-Outdoor datasets (respective to their filenames)
+- Create a folder 'weights' to place downloaded weight files
 
 #### 2. Correct Data Paths in [test_on_images.py](https://github.com/tranleanh/edn-gtm/blob/main/test_on_images.py)
 - Path to pre-trained weight: [weight_path](https://github.com/tranleanh/edn-gtm/blob/6c3d5ebb058cfde72aea57c0d90c6e8b40216ca1/test_on_images.py#L58) 
@@ -703,17 +703,26 @@ $ python train.py
 Visual dehazing results on synthetic hazy scenes:
 
 <!-- <img src="docs/waymo_dehazed.png" width="800"> -->
-<img src="docs/HazyWAYMO.png" width="800">
+<img src="docs/hazy_waymo_results.png" width="800">
 
 Visual dehazing results on realistic hazy scenes:
 
 <!-- <img src="docs/waymo_dehazed.png" width="800"> -->
-<img src="docs/FoggyDriving.png" width="800">
+<img src="docs/foggy_driving_results.png" width="800">
 
 #### (b) Object Detection Performances
-Object detection performances on two sets of hazy (left) and dehazed (right) images (red: ground-truth box, green: predicted box, blue: zoom-in region).
 
-<img src="docs/applied-to-object-detection.png" width="800">
+(Red: ground-truth, Green: detection)
+
+<!-- <img src="docs/applied-to-object-detection.png" width="800"> -->
+
+Visual dehazing + detection results on synthetic hazy scenes:
+
+<img src="docs/hazy_waymo_det_results.png" width="800">
+
+Visual dehazing + detection results on realistic hazy scenes:
+
+<img src="docs/foggy_driving_det_results.png" width="800">
 
 <!-- ## Citation
 
