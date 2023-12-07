@@ -33,10 +33,10 @@ v. Architecture: --->
 
 ## Updates
 
-The following items are about to be uploaded:
+<!--- The following items are about to be uploaded: --->
 
 - [x] Pre-trained models for test on SOTS-Outdoor and HSTS datasets
-- [ ] Results on SOTS-Outdoor and HSTS datasets
+- [ ] Result tables for SOTS-Outdoor and HSTS datasets
 
 ## Introduction
 
@@ -66,17 +66,17 @@ $ pip install -r requirements.txt
 
 ## Test using Pre-trained Weights
 
-#### 1. Download Pre-trained Weights
+#### Step 1: Download Pre-trained Weights
 - Download pre-trained weights from [GoogleDrive](https://drive.google.com/drive/folders/1SjakD7bzNbZm5K8KxBYgXE5DgdEjFiQt)
 - Pre-trained weights are available for test on: I-HAZE, O-HAZE, Dense-HAZE, NH-HAZE, SOTS-Outdoor datasets (respective to their filenames)
 - Create a folder 'weights' to place downloaded weight files
 
-#### 2. Correct Data Paths in [test_on_images.py](https://github.com/tranleanh/edn-gtm/blob/main/test_on_images.py)
+#### Step 2: Correct Data Paths in [test_on_images.py](https://github.com/tranleanh/edn-gtm/blob/main/test_on_images.py)
 - Path to pre-trained weight: [weight_path](https://github.com/tranleanh/edn-gtm/blob/6c3d5ebb058cfde72aea57c0d90c6e8b40216ca1/test_on_images.py#L58) 
 - Path to output directory: [output_dir](https://github.com/tranleanh/edn-gtm/blob/6c3d5ebb058cfde72aea57c0d90c6e8b40216ca1/test_on_images.py#L63)
 - Path to folder containing test images: [img_src](https://github.com/tranleanh/edn-gtm/blob/6c3d5ebb058cfde72aea57c0d90c6e8b40216ca1/test_on_images.py#L69)
 
-#### 3. Run Test Script
+#### Step 3: Run Test Script
 
 ```bashrc
 $ python test_on_images.py
@@ -84,11 +84,11 @@ $ python test_on_images.py
 
 ## Train
 
-#### 1. Prepare Dataset
+#### Step 1: Prepare Dataset
 - Each image in a clean-hazy image pair must have the same name
 - Make Folder 'A' and Folder 'B' containing hazy and clean images, respectively
 
-#### 2. Correct Data Paths in [train.py](https://github.com/tranleanh/edn-gtm/blob/main/train.py)
+#### Step 2: Correct Data Paths in [train.py](https://github.com/tranleanh/edn-gtm/blob/main/train.py)
 - Path to folder containing train data: [path/to/data](https://github.com/tranleanh/edn-gtm/blob/6c3d5ebb058cfde72aea57c0d90c6e8b40216ca1/train.py#L39)
 - Note that [path/to/data](https://github.com/tranleanh/edn-gtm/blob/6c3d5ebb058cfde72aea57c0d90c6e8b40216ca1/train.py#L39) nevigates to the parent directory of 'A' and 'B' like below:
 
@@ -97,8 +97,7 @@ $ python test_on_images.py
                 |- A (containing hazy images)
                 |- B (containing clean images)
 ```
-
-#### 3. Run Train Script
+#### Step 3: Run Train Script
 ```bashrc
 $ python train.py
 ```
@@ -106,9 +105,9 @@ $ python train.py
 
 ## Results
 
-#### 1. Quantitative Results (#Params: Number of parameters, MACs: multiply-accumulate operations measured on 512x512 input)
+### A. Quantitative Results (#Params: number of parameters, MACs: multiply-accumulate operations)
 
-#### (a) I-HAZE & O-HAZE Datasets:
+#### Results on I-HAZE & O-HAZE Datasets:
 
 <!---
 <table>
@@ -394,7 +393,7 @@ $ python train.py
 
 
 
-#### (b) Dense-HAZE & NH-HAZE Datasets
+#### Results on Dense-HAZE & NH-HAZE Datasets
 
 <!---
 <table>
@@ -678,28 +677,24 @@ $ python train.py
 
 
 
-#### 2. Qualitative Results
+### B. Qualitative Results
 
-#### (a) I-HAZE Dataset
+#### Results on I-HAZE & O-HAZE Datasets
 
-<img src="docs/i-haze.png" width="800">
+<img src="docs/ihaze_ohaze.png" width="800">
 
-#### (b) O-HAZE Dataset
+#### Results on Dense-HAZE & NH-HAZE Datasets
 
-<img src="docs/o-haze.png" width="800">
+<img src="docs/densehaze_nhhaze.png" width="800">
 
-#### (c) Dense-HAZE Dataset
+#### Results on SOTS-Outdoor & HSTS Datasets
 
-<img src="docs/dense-haze.png" width="800">
-
-#### (d) NH-HAZE Dataset
-
-<img src="docs/nh-haze.png" width="800">
+<img src="docs/sotsoutdoor_hsts.png" width="800">
 
 
-#### 3. Application to Object Detection
+### C. Application to Object Detection
 
-#### (a) Dehazing in Driving Scenes
+#### Dehazing in Driving Scenes
 Visual dehazing results on synthetic hazy scenes:
 
 <!-- <img src="docs/waymo_dehazed.png" width="800"> -->
@@ -710,7 +705,7 @@ Visual dehazing results on realistic hazy scenes:
 <!-- <img src="docs/waymo_dehazed.png" width="800"> -->
 <img src="docs/foggy_driving_results.png" width="800">
 
-#### (b) Object Detection Performances
+#### Object Detection
 
 (Red: ground-truth, Green: detection)
 
