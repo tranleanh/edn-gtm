@@ -1,5 +1,7 @@
 # EDN-GTM: Encoder-Decoder Network with Guided Transmission Map for Effective Image Dehazing
 
+[![Weights](https://img.shields.io/badge/Weights-Hugging%20Face-gold)](https://huggingface.co/tranleanh/edn-gtm)
+
 <!--- The official implementation of the paper "A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing"   
 
 (Presented in International Conference on Industry Science and Computer Sciences Innovation 2022 ([iSCSi'22](https://iscsi-conference.org/)), Porto, Portugal, March 9-11, 2022)
@@ -67,7 +69,7 @@ $ pip install -r requirements.txt
 ## Test using Pre-trained Weights
 
 #### Step 1: Download Pre-trained Weights
-- Download pre-trained weights from [GoogleDrive](https://drive.google.com/drive/folders/1SjakD7bzNbZm5K8KxBYgXE5DgdEjFiQt)
+- Download pre-trained weights from [GoogleDrive](https://drive.google.com/drive/folders/1SjakD7bzNbZm5K8KxBYgXE5DgdEjFiQt) or [HuggingFace](https://huggingface.co/tranleanh/edn-gtm)
 - Pre-trained weights are available for test on: I-HAZE, O-HAZE, Dense-HAZE, NH-HAZE, SOTS-Outdoor datasets (respective to their filenames)
 - Create a folder 'weights' to place downloaded weight files
 
