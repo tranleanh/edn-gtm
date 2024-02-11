@@ -1,6 +1,7 @@
 # EDN-GTM: Encoder-Decoder Network with Guided Transmission Map for Effective Image Dehazing
 
-[![Weights](https://img.shields.io/badge/Weights-Hugging%20Face-gold)](https://huggingface.co/tranleanh/edn-gtm)
+[![Models](https://img.shields.io/badge/Models-Hugging_Face-gold)](https://huggingface.co/tranleanh/edn-gtm)
+[![Blog](https://img.shields.io/badge/Blog-Medium-blue)](https://towardsdatascience.com/edn-gtm-encoder-decoder-network-with-guided-transmission-map-for-single-image-dehazing-78e8036bbaa3)
 
 <!--- The official implementation of the paper "A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing"   
 
