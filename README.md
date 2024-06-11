@@ -2,6 +2,8 @@
 
 [![Models](https://img.shields.io/badge/Models-Hugging_Face-gold)](https://huggingface.co/tranleanh/edn-gtm)
 [![Blog](https://img.shields.io/badge/Blog-Medium-blue)](https://towardsdatascience.com/edn-gtm-encoder-decoder-network-with-guided-transmission-map-for-single-image-dehazing-78e8036bbaa3)
+[![Paper](https://img.shields.io/badge/Paper-Conference-orange)](https://www.sciencedirect.com/science/article/pii/S1877050922008201)
+[![Paper](https://img.shields.io/badge/Paper-Journal-blue)](https://link.springer.com/article/10.1007/s00371-024-03330-5)
 
 <!--- The official implementation of the paper "A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing"   
 
@@ -34,12 +36,14 @@ iv. Abstract:
 
 v. Architecture: --->
 
+<!---
 ## Updates
 
-<!--- The following items are about to be uploaded: --->
+ The following items are about to be uploaded: 
 
 - [x] Pre-trained models for test on SOTS-Outdoor and HSTS datasets
 - [ ] Result tables for SOTS-Outdoor and HSTS datasets
+--->
 
 ## Introduction
 
@@ -722,18 +726,29 @@ Visual dehazing + detection results on realistic hazy scenes:
 
 <img src="docs/foggy_driving_det_results.png" width="800">
 
-<!-- ## Citation
 
+## Citation
+
+```bibtex
+@article{tran2022novel,
+  title={A novel encoder-decoder network with guided transmission map for single image dehazing},
+  author={Tran, Le-Anh and Moon, Seokyong and Park, Dong-Chul},
+  journal={Procedia Computer Science},
+  volume={204},
+  pages={682--689},
+  year={2022},
+  publisher={Elsevier}
+}
+
+@article{tran2024encoder,
+  title={Encoder-decoder networks with guided transmission map for effective image dehazing},
+  author={Tran, Le-Anh and Park, Dong-Chul},
+  journal={The Visual Computer},
+  pages={1--24},
+  year={2024},
+  publisher={Springer}
+}
 ```
-@article{Tran_2022,	
-year = 2022,	
-publisher = {Elsevier {BV}},	
-volume = {204},	
-pages = {682--689},	
-author = {Le-Anh Tran and Seokyong Moon and Dong-Chul Park},	
-title = {A novel encoder-decoder network with guided transmission map for single image dehazing},	
-journal = {Procedia Computer Science}}
-``` -->
 
 
 Have fun!
