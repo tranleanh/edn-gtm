@@ -1,49 +1,15 @@
-# EDN-GTM: Encoder-Decoder Network with Guided Transmission Map for Effective Image Dehazing
+# EDN-GTM: Encoder-Decoder Network with Guided Transmission Map
 
 [![Models](https://img.shields.io/badge/Models-Hugging_Face-gold)](https://huggingface.co/tranleanh/edn-gtm)
 [![Blog](https://img.shields.io/badge/Blog-Medium-blue)](https://towardsdatascience.com/edn-gtm-encoder-decoder-network-with-guided-transmission-map-for-single-image-dehazing-78e8036bbaa3)
 [![Paper](https://img.shields.io/badge/Paper-Conference-orange)](https://www.sciencedirect.com/science/article/pii/S1877050922008201)
 [![Paper](https://img.shields.io/badge/Paper-Journal-blue)](https://link.springer.com/article/10.1007/s00371-024-03330-5)
 
-<!--- The official implementation of the paper "A Novel Encoder-Decoder Network with Guided Transmission Map for Single Image Dehazing"   
+The official implementation of the paper "Encoder-Decoder Network with Guided Transmission Map for Effective Image Dehazing".
 
-(Presented in International Conference on Industry Science and Computer Sciences Innovation 2022 ([iSCSi'22](https://iscsi-conference.org/)), Porto, Portugal, March 9-11, 2022)
+Authors: [Le-Anh Tran](https://scholar.google.com/citations?user=WzcUE5YAAAAJ&hl=en), [Dong-Chul Park](https://scholar.google.com/citations?user=VZUH4sUAAAAJ&hl=en)
 
-Authors: [Le-Anh Tran](https://scholar.google.com/citations?user=WzcUE5YAAAAJ&hl=en), Seokyong Moon, Dong-Chul Park --->
-
-<!-- 
-## Introduction
-
-An Encoder-Decoder Network with Guided Transmission Map (EDN-GTM) for single image dehazing scheme is proposed in this paper. The proposed EDN-GTM takes conventional RGB hazy image in conjunction with its transmission map estimated by adopting dark channel prior as the inputs of the network. The proposed EDN-GTM utilizes U-Net for image segmentation as the core network and utilizes various modifications including spatial pyramid pooling module and Swish activation to achieve state-of-the-art dehazing performance. Experiments on benchmark datasets show that the proposed EDN-GTM outperforms most of traditional and deep learning-based image dehazing schemes in terms of PSNR and SSIM metrics. The proposed EDN-GTM furthermore proves its applicability to object detection problems. Specifically, when applied to an image preprocessing tool for driving object detection, the proposed EDN-GTM can efficiently remove haze and significantly improve detection accuracy by 4.73% in terms of mAP measure.  -->
-
-<!--- i. Publication: [Procedia Computer Science 204](https://www.sciencedirect.com/science/article/pii/S1877050922008201?via%3Dihub#!)   
-
- Preprint version: [arXiv](https://arxiv.org/abs/2202.04757) Published version: [Procedia Computer Science 204](https://www.sciencedirect.com/science/article/pii/S1877050922008201?via%3Dihub#!) --->
-
-<!---
-ii. Blog: [Towards Data Science](https://tranlevision.medium.com/edn-gtm-encoder-decoder-network-with-guided-transmission-map-for-single-image-dehazing-78e8036bbaa3)
-
-iii. Results on [Papers With Code](https://paperswithcode.com/)
-
-- [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-novel-encoder-decoder-network-with-guided/image-dehazing-on-i-haze)](https://paperswithcode.com/sota/image-dehazing-on-i-haze?p=a-novel-encoder-decoder-network-with-guided)    
-- [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-novel-encoder-decoder-network-with-guided/image-dehazing-on-o-haze)](https://paperswithcode.com/sota/image-dehazing-on-o-haze?p=a-novel-encoder-decoder-network-with-guided)    
-- [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-novel-encoder-decoder-network-with-guided/image-dehazing-on-dense-haze)](https://paperswithcode.com/sota/image-dehazing-on-dense-haze?p=a-novel-encoder-decoder-network-with-guided)    
-- [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-novel-encoder-decoder-network-with-guided/nonhomogeneous-image-dehazing-on-nh-haze)](https://paperswithcode.com/sota/nonhomogeneous-image-dehazing-on-nh-haze?p=a-novel-encoder-decoder-network-with-guided)
-
-iv. Abstract:   
-
-<p align="justify">A novel Encoder-Decoder Network with Guided Transmission Map (EDN-GTM) for single image dehazing scheme is proposed in this paper. The proposed EDN-GTM takes conventional RGB hazy image in conjunction with its transmission map estimated by adopting dark channel prior as the inputs of the network. The proposed EDN-GTM adopts U-Net for image segmentation as the core network and utilizes various modifications including spatial pyramid pooling module and Swish activation to achieve state-of-the-art dehazing performance. Experiments on benchmark datasets show that the proposed EDN-GTM outperforms most of traditional and deep learning-based image dehazing schemes in terms of PSNR and SSIM metrics. The proposed EDN-GTM furthermore proves its applicability to object detection problems. Specifically, when applied to an image preprocessing tool for driving object detection, the proposed EDN-GTM can efficiently remove haze and significantly improve detection accuracy by 4.73% in terms of mAP measure.</p>
-
-v. Architecture: --->
-
-<!---
-## Updates
-
- The following items are about to be uploaded: 
-
-- [x] Pre-trained models for test on SOTS-Outdoor and HSTS datasets
-- [ ] Result tables for SOTS-Outdoor and HSTS datasets
---->
+Journal: The Visual Computer (Springer), 2024
 
 ## Introduction
 
