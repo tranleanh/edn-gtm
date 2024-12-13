@@ -5,7 +5,7 @@
 [![Paper](https://img.shields.io/badge/Paper-Conference-orange)](https://www.sciencedirect.com/science/article/pii/S1877050922008201)
 [![Paper](https://img.shields.io/badge/Paper-Journal-blue)](https://link.springer.com/article/10.1007/s00371-024-03330-5)
 
-The official implementation of the paper "Encoder-Decoder Networks with Guided Transmission Map for Effective Image Dehazing".
+The official implementation of the paper [Encoder-Decoder Networks with Guided Transmission Map for Effective Image Dehazing](https://link.springer.com/article/10.1007/s00371-024-03330-5).
 
 Authors: [Le-Anh Tran](https://scholar.google.com/citations?user=WzcUE5YAAAAJ&hl=en), [Dong-Chul Park](https://scholar.google.com/citations?user=VZUH4sUAAAAJ&hl=en)
 
