@@ -7,6 +7,8 @@
 
 The official implementation of the paper [Encoder-Decoder Networks with Guided Transmission Map for Effective Image Dehazing](https://link.springer.com/article/10.1007/s00371-024-03330-5).
 
+*** Pytorch Version: [edn-gtm-torch](https://github.com/tranleanh/edn-gtm-torch) ***
+
 Authors: [Le-Anh Tran](https://scholar.google.com/citations?user=WzcUE5YAAAAJ&hl=en), [Dong-Chul Park](https://scholar.google.com/citations?user=VZUH4sUAAAAJ&hl=en)
 
 Journal: [The Visual Computer](https://link.springer.com/article/10.1007/s00371-024-03330-5) (Springer), 2024
